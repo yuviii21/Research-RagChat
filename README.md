@@ -1,5 +1,19 @@
 # Research RagChat: AI-Powered Research Paper Chatbot
 
+## Run the interactive UI
+
+The project now includes a Streamlit interface for uploading a research PDF, indexing it locally for the session, and asking cited questions about its contents.
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+$env:OPENAI_API_KEY="your-api-key"
+streamlit run app.py
+```
+
+Open the local URL printed by Streamlit. You can also paste an API key into the app's sidebar; it is used only in the current browser session. Upload a PDF, choose **Process paper**, then ask questions in the chat. The Evidence desk shows the source passages behind the latest answer.
+
 ## Problem Statement:
 In the rapidly evolving landscape of academic research, students and researchers often face challenges in efficiently navigating and comprehending extensive research papers. Research RagChat addresses this issue by providing an AI-driven platform that simplifies the process of extracting insights and engaging with research content.
 

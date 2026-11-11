@@ -1,0 +1,5 @@
+streamlit>=1.39
+openai>=1.54
+pypdf>=5.0
+faiss-cpu>=1.9
+numpy>=1.26
